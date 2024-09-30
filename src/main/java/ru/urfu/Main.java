@@ -14,5 +14,9 @@ public class Main {
         System.out.println("\nЗапуск Lab3:");
         Lab3 lab3 = new Lab3();
         lab3.run();
+
+        System.out.println("\nЗапуск main.java.ru.urfu.Lab4:");
+        Lab4 lab4 = new Lab4();
+        lab4.run();
     }
 }
