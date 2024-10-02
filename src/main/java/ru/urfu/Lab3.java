@@ -1,5 +1,5 @@
 package ru.urfu;
-import java.util.Map;
+
 public class Lab3 {
     static double[] V = {5.0, 7.0, 9.0, 11.0};
     static double[] B = {0.0, 2.0, 5.0, 4.0};
@@ -111,6 +111,7 @@ public class Lab3 {
         }
         return s;
     }
+
     public static double getBC(int n, int type) {
         double bc = 0;
         if (type == 1) {
@@ -129,11 +130,5 @@ public class Lab3 {
             r = getR(n - 1, type) * Math.abs((1 + (sum(V, n) - getSumBC(n, type)) / 1000));
         }
         return r;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("\nЗапуск Lab3:");
-        Lab3 lab3 = new Lab3();
-        lab3.run();
     }
 }
