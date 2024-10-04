@@ -6,31 +6,31 @@ import java.util.Random;
 
 public class Lab5 {
     //число зарегистрированных отказов
-    private int _Q = 5;
+    private final int _Q = 5;
 
     //число экспериментов
-    private int _N = 1000;
+    private final int _N = 1000;
 
     //среднее время восстановления Tv, с
-    private double _minTv = 0.7d;
-    private double _maxTv = 1.2d;
-    private int _stepsTv = 100;
+    private final double _minTv = 0.7d;
+    private final double _maxTv = 1.2d;
+    private final int _stepsTv = 100;
 
     //допустимое время восстановления, с
-    private double _Tdopv = 0.85d;
+    private final double _Tdopv = 0.85d;
 
     //фактическая продолжительность преобразования i-го
     //входного набора данных Tpi, с
-    private double _minTpi = 9.0d;
-    private double _maxTpi = 14.0d;
-    private int _stepsTpi = 200;
+    private final double _minTpi = 9.0d;
+    private final double _maxTpi = 14.0d;
+    private final int _stepsTpi = 200;
 
     //допустимое время преобразования i-го
     //входного набора данных, с
-    private double _Tdoppi = 12.0d;
+    private final double _Tdoppi = 12.0d;
 
     //базовые критерии надежности
-    private double _basicCriteria = 0.95d;
+    private final double _basicCriteria = 0.95d;
 
     private double GetH0401() {
         return 1 - (double)_Q/_N;
