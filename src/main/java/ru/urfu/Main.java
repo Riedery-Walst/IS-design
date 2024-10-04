@@ -18,5 +18,9 @@ public class Main {
         System.out.println("\nЗапуск Lab4:");
         Lab4 lab4 = new Lab4();
         lab4.run();
+
+        System.out.println("Запуск Lab5:");
+        Lab5 lab5 = new Lab5();
+        lab5.run();
     }
 }
